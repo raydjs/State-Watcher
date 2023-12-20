@@ -66,6 +66,8 @@ myTable.PlayerInfo.isRunning = true
 myTable.PlayerInfo.isRunning = false
 myTable.PlayerInfo.Health -= 10
 myTable.PlayerInfo.Name = "kiro legend"
+
+inject:Destroy({ "PlayerInfo", "Name" })
 ```
 
 
