@@ -4,6 +4,11 @@ The Module is inspired off **__ReplicaService__** just without the Networking Sy
 
 The State-Watcher doesn't have any specific Paradigm to follow, all it does is apply Methods to the table you created and display the changes :)
 
+The Module itself doesn't have `setter() or getter()` to set each values or get the values, you just basically concatenate them 
+
+But the only thing that it's not allowed to do is constructing an empty list, let's say you'd like to create a Playerlist or a leaderboard and then you proceed to add a new Key 
+It would not trigger that changes. Which I'll look forward soon.
+
 Anyways, let's get straight-forward on how to use the State-Watcher
 
 # Classes
@@ -17,9 +22,11 @@ Currently there is only 2 Class
     * State.extension.inject(State.create)
   
 # Methods
-The methods currently is
+The existant methods are:
 * `inject:Watch(path, callback)`
+ * This will apply a method to attach to the value you want to watch.
 * `inject:Destroy()`
+ * This method is optional if you want to destroy the `:Watch()` method
 
 # Usage
 
