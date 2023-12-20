@@ -1,7 +1,8 @@
 # State-Watcher
 This module gives the table sort of like an event to display the Value that's been changed.
-
 The Module is inspired off **__ReplicaService__** just without the Networking System which I'll be working on Soon.
+
+The State-Watcher doesn't have any specific Paradigm to follow, all it does is apply Methods to the table you created and display the changes :)
 
 Anyways, let's get straight-forward on how to use the State-Watcher
 
@@ -68,6 +69,9 @@ myTable.PlayerInfo.Health -= 10
 myTable.PlayerInfo.Name = "kiro legend"
 
 inject:Destroy({ "PlayerInfo", "Name" })
+inject:Destroy({ "PlayerInfo", "Health" })
+inject:Destroy({ "PlayerInfo", "isRunning" })
+inject:Destroy({ "PlayerInfo", "isRagdolled" })
 ```
 
 
